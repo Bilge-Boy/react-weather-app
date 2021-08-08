@@ -1,7 +1,6 @@
 import './App.css';
 import Forecast1Day from './Forecast1Day/Forecast1Day';
 import 'bootstrap/dist/css/bootstrap.css';
-import Forecast from './Forecast/Forecast';
 import { useEffect,useState } from 'react';
 
 function App() {
@@ -16,8 +15,8 @@ function App() {
   return (
     <div className="App row">
      {
-        dayCard.map((card)=>{
-          return <Forecast1Day day={card.day} description={card.description} icon={card.icon} temp={card.temperature}/>      
+        dayCard.map((card, i)=>{
+          return <Forecast1Day key={i} day={card.day} description={card.description} icon={card.icon} temp={card.temperature}/>      
         })
      }
       
