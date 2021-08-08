@@ -10,7 +10,6 @@ function Forecast1Day(prop){
         5:"Friday",
         6:"Saturday"
     }
-    console.log(`../icons/${prop.icon}.png)`)
     return(
         <div className="card col-2 m-1 text-center bg-info">
             <div className="card-header">

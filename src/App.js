@@ -13,8 +13,6 @@ function App() {
       setDayCard(days);
   })
   },[]);
-
-  console.log(dayCard);
   return (
     <div className="App row">
      {
